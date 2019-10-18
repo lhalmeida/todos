@@ -32,12 +32,17 @@ function renderTodos () {
 renderTodos();
 
 function addTodo () {
-    var todoText = inputElement.value;
+    var todoText = inputElement.value.toUpperCase();
+
+    if(todoText != ''){
 
     todos.push(todoText);
     inputElement.value = '';
     renderTodos();
     saveToStorage();
+} else {
+    alert('Digite um valor!');
+}
 }
 
 buttonElement.onclick = addTodo;
