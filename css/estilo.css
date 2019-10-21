@@ -1,12 +1,37 @@
 @media (max-width: 1980px) {
 
 * {
-    font-family: 'Open Sans'
+    font-family: 'Open Sans';
+}
+
+body {
+    padding: 0!important;
+    margin: 0;
+}
+
+header {
+    margin-top: -20px;
+}
+
+.menu {
+    padding: 10px;
+    margin: 0;
+    z-index: 0;
+    max-height: 100px;
+    border-bottom: 3px solid #8505B0;
+}
+
+.logo {
+    text-align: center;
+    line-height: 2.6;
+    font-weight: 900;
+    font-size: 14pt;
+    color: rgb(173, 30, 192);
 }
 
 #app {
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
     
 }
 
